@@ -73,7 +73,7 @@ void AAuraPlayerController::CursorTrace()
 	ThisActor = Cast<IEnemyInterface>(CursorHit.GetActor());
 
 	// Check last hit result and this hit result, then update actors.
-	if (!LastActor && !ThisActor)
+	if (!LastActor && !ThisActor)  
 	{
 		return;
 	}
