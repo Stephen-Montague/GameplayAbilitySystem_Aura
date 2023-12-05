@@ -6,9 +6,9 @@
 
 AAuraEnemy::AAuraEnemy()
 {
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
 	GetMesh()->SetCustomDepthStencilValue(Custom_Depth_Red);
 	Weapon->SetCustomDepthStencilValue(Custom_Depth_Red);
-	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
 }
 
 void AAuraEnemy::HighlightActor()
