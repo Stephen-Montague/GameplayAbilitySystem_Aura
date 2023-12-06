@@ -27,6 +27,8 @@ void AAuraPlayerController::BeginPlay()
 	InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
 	InputModeData.SetHideCursorDuringCapture(false);
 	SetInputMode(InputModeData);
+
+	AddPitchInput(50.f);
 }
 
 void AAuraPlayerController::SetupInputComponent()
